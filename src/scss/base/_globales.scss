@@ -1,0 +1,83 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$fuentePrincipal;
+    font-size: 1.5rem;
+    position: relative;
+
+    @include m.desktop {
+        height: max-content;
+    }
+
+    @include m.desktopXL {
+        height: 100vh;
+    }
+
+    .bg-top {
+        background-image: url(../../images/bg-pattern-top-mobile.svg) ;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+
+        @include m.desktop{
+            background-image: url(../../images/bg-pattern-top-desktop.svg);
+            right: 16rem;
+        }
+    }
+
+    .bg-bottom {
+        background: url(../../images/bg-pattern-bottom-mobile.svg) ;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 50rem;
+        bottom: 0;
+        background-size: cover;
+
+        @include m.desktop {
+            background-image: url(../../images/bg-pattern-bottom-desktop.svg);
+        }
+    }
+}
+
+img {
+    display: inline-block;
+    margin-right: 0;
+}
+h1 {
+    font-size: 3.5rem;
+    line-height: 2.8rem;
+}
+p {
+    line-height: 2.4rem;
+    margin: 0;
+}
+
+
+.contenedor-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 85%;
+
+    @include m.tablet {
+        width: 80%;
+    }
+}
