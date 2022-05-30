@@ -481,6 +481,7 @@ p {
   .contenedor-estrellas {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 }
 

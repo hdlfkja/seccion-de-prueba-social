@@ -54,6 +54,7 @@
     @include m.tablet {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
 }
