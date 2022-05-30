@@ -25,14 +25,14 @@ Los usuarios deben ser capaces de:
 
 #### Diseño Mobil
 
-![](./Dise%C3%B1o_Mobil.png)
+![](./Dise%C3%B1o-Mobil.png)
 
 #### Diseño en Tablet
-![](./Dise%C3%B1o_Tablet.png)
+![](./Dise%C3%B1o-Tablet.png)
 
 #### Diseño de Escritorio
 
-![](./Dise%C3%B1o_Escritorio.png)
+![](./Dise%C3%B1o-Escritorio.png)
 
 ### Enlaces
 
